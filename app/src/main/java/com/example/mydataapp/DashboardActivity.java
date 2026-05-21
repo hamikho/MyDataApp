@@ -54,6 +54,10 @@ public class DashboardActivity extends AppCompatActivity {
         txtWelcome.setText(
                 "Selamat Datang " + username);
 
+        Toast.makeText(this,
+                "Selamat Datang " + username,
+                Toast.LENGTH_SHORT).show();
+
         dataList = new ArrayList<>();
 
         adapter = new ArrayAdapter<>(
@@ -81,6 +85,13 @@ public class DashboardActivity extends AppCompatActivity {
             Toast.makeText(this,
                     "Data berhasil ditambah",
                     Toast.LENGTH_SHORT).show();
+
+            etNim.setText("");
+            etNama.setText("");
+            etProdi.setText("");
+            etKelas.setText("");
+            etAlamat.setText("");
+            etEmail.setText("");
         });
 
         btnLogout.setOnClickListener(v -> {
@@ -94,6 +105,10 @@ public class DashboardActivity extends AppCompatActivity {
 
             editor.clear();
             editor.apply();
+
+            Toast.makeText(this,
+                    "Logout berhasil",
+                    Toast.LENGTH_SHORT).show();
 
             Intent intent =
                     new Intent(DashboardActivity.this,

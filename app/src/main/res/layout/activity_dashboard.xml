@@ -120,6 +120,7 @@
             android:backgroundTint="#5B2EFF"
             android:layout_marginTop="22dp"/>
 
+        <!-- TITLE LIST -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -130,6 +131,7 @@
             android:layout_marginTop="25dp"
             android:layout_marginBottom="10dp"/>
 
+        <!-- LISTVIEW -->
         <ListView
             android:id="@+id/listView"
             android:layout_width="match_parent"

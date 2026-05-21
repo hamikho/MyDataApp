@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             if(user.isEmpty() || pass.isEmpty()){
 
                 Toast.makeText(this,
-                        "Data tidak boleh kosong",
+                        "Username dan pass tidak boleh kosong",
                         Toast.LENGTH_SHORT).show();
 
             } else if(user.equals("admin")
