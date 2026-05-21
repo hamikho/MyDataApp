@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dashboard"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="#5B2EFF"/>
+
+                <TextView
+                    android:id="@+id/txtWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selamat Datang"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#666666"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="Logout"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#5B2EFF"/>
+
+        </LinearLayout>
+
+        <!-- INPUT -->
+        <EditText
+            android:id="@+id/etNim"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="NIM"
+            android:padding="15dp"
+            android:backgroundTint="#5B2EFF"/>
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Nama Lengkap"
+            android:padding="15dp"
+            android:backgroundTint="#5B2EFF"
+            android:layout_marginTop="14dp"/>
+
+        <EditText
+            android:id="@+id/etProdi"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Program Studi"
+            android:padding="15dp"
+            android:backgroundTint="#5B2EFF"
+            android:layout_marginTop="14dp"/>
+
+        <EditText
+            android:id="@+id/etKelas"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Kelas"
+            android:padding="15dp"
+            android:backgroundTint="#5B2EFF"
+            android:layout_marginTop="14dp"/>
+
+        <EditText
+            android:id="@+id/etAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Alamat"
+            android:padding="15dp"
+            android:backgroundTint="#5B2EFF"
+            android:layout_marginTop="14dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="E-Mail"
+            android:padding="15dp"
+            android:backgroundTint="#5B2EFF"
+            android:layout_marginTop="14dp"/>
+
+        <!-- BUTTON -->
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Tambah Data"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#5B2EFF"
+            android:layout_marginTop="22dp"/>
+
+        <!-- TITLE LIST -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Mahasiswa"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#5B2EFF"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- LISTVIEW -->
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
